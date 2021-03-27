@@ -1,4 +1,4 @@
-//Complete the given program to count number of vowels in a string
+//Complete the given 
 //read the input string to be find number vowels present.
 //apply comparison character('a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u' and 'U'), if match found, the count to be incremented by one.
 //finally display the count of vowels present
@@ -13,41 +13,16 @@ int main()
   int c = 0, count = 0;
   char s[1000];
 
-  printf("Input a string: ");
-  scanf("%s", s);
+  printf("Input a string\n");
+  gets(s);
 
-  while (s[c] != '\0') 
-  {
-    if(s[c]='a'){
-      printf("it is a vowel");
+  while (s[c] != '\0') {
+    if (s[c] == 'a' || s[c] == 'A' || s[c] == 'e' || s[c] == 'E' || s[c] == 'i' || s[c] == 'I' || s[c] =='o' || s[c]=='O' || s[c] == 'u' || s[c] == 'U')
       count++;
-    }
-    else if(s[c]='e'){
-    printf("it is a vowel");
-    count++;}
-    else if(s[c]='i')
-    {
-      printf("it is a vowel");
-      count++;
-    }
-    else if(s[c]='o')  
-    {
-      printf("it is a vowel");
-      count++;
-    }
-    else if(s[c]='u')
-    {
-      printf("it is a vowel");
-      count++;
-    }
-    else
-    {
-      printf("it is a consonant");
-     
-    }//place logic to find the vowel
+    c++;
   }
 
-  printf("Number of vowels in the string = %d", count);
+  printf("Number of vowels in the string: %d", count);
 
   return 0;
 }
