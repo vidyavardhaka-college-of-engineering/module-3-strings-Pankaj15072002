@@ -16,8 +16,35 @@ int main()
   printf("Input a string: ");
   scanf("%s", s);
 
-  while (s[c] != '\0') {
-                               //place logic to find the vowel
+  while (s[c] != '\0') 
+  {
+    if(s[c]='a'){
+      printf("it is a vowel");
+      count++;
+    }
+    else if(s[c]='e'){
+    printf("it is a vowel");
+    count++;}
+    else if(s[c]='i')
+    {
+      printf("it is a vowel");
+      count++;
+    }
+    else if(s[c]='o')  
+    {
+      printf("it is a vowel");
+      count++;
+    }
+    else if(s[c]='u')
+    {
+      printf("it is a vowel");
+      count++;
+    }
+    else
+    {
+      printf("it is a consonant");
+     
+    }//place logic to find the vowel
   }
 
   printf("Number of vowels in the string = %d", count);
